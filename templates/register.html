@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>🌟Register</title>
+   <link rel="stylesheet" href="{% static 'register.css' %}">
+</head>
+<body>
+   <div class="myform">
+      <h1 class="text">Sign Up Below</h1>
+      {% for message in messages %}
+      <h5>{{message}}</h5>
+      {% endfor %}
+     
+      <form method="POST" action="register">
+         {% csrf_token %}
+         <p>Username:</p>
+         <input class="username" type="text" name="username">
+         <p>Email:</p>
+         <input class="email" type="email" name="email">
+         <p>Password:</p>
+         <input class="password" type="password" name="password">
+         <p>Repeat Password:</p>
+         <input class="password2" type="password" name="password2"> <br>
+         <input class="submit" type="submit">
+      </form>
+      <p>You have an account? <a class="login" href="login">Login</a></p>
+     </div>
+</body>
+</html>

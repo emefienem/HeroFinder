@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'superhero.css' %}" rel="stylesheet"/>
+    <title>🌟HeroFinder</title>
+</head>
+<body>
+  {% if user.is_authenticated %}
+  <button class="logout"><a class="logout2" href="logout">Logout</a></button>
+  {% else %}
+  <button class="login"><a class="login2" href="login">Login</a></button>
+  {% endif %}
+  {% if user.is_authenticated %}
+  <h1 class="name">WELCOME, {{user.username|upper}} TO HEROFINDER</h1>
+  <h2 class="text1">🌟HEROFINDER</h2>
+  <p class="text2" >Welcome to our superhero search and random generator website! With our site, you can easily search for your favorite superhero or discover a new one with our random superhero generator.
+
+    Simply enter the name of the superhero you're looking for in the search bar, and we'll provide you with their picture and detailed information about their capabilities, powers, and intelligence.
+    
+    Alternatively, you can click on the "Random Superhero" button to generate a completely random superhero with a unique set of abilities and powers. You never know, you might just find your new favorite superhero!
+    
+    We have a vast database of superheroes from various comic book publishers, including Marvel and DC. Our site is updated regularly, so you can be sure that you're getting the latest and most accurate information about your favorite superheroes.
+    
+    So what are you waiting for? Start exploring our superhero search and random generator website and discover the amazing world of superheroes!</p>
+  <input class="input" id='searchInput' type="text" placeholder="Search">
+  <button class="search2" id='searchButton'>Search</button>
+  <button class="randomhero" id='newHeroButton'>Random Hero</button>
+  </br>
+  <div id='heroImage'><img src="" alt=""></div>
+  <script src="{% static 'superhero.js' %}"></script>
+  {% else %}
+  <li><a href="login">Login</a></li>
+  {% endif %}
+  </body>
+  </html>
