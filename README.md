@@ -1,5 +1,5 @@
 # HeroFinder
-Welcome to the GitHub repository for our superhero search and random generator website! Our site allows users to search for their favorite superheroes or generate a random superhero with a unique set of powers and abilities.
+Welcome to the GitHub repository for our superhero HeroFinder! Our site allows users to search for their favorite superheroes or generate a random superhero with a unique set of powers and abilities.
 
 Our website is built using HTML, CSS, JavaScript and Python(Django) and we use API calls to fetch data about superheroes from various comic book publishers, including Marvel and DC. We also use JavaScript to dynamically generate superhero images and display detailed information about their capabilities and powers.
 
@@ -9,4 +9,4 @@ Our website is designed to be user-friendly and easy to navigate, with a search 
 
 Feel free to explore our code and contribute to our project by submitting pull requests or reporting issues.
 
-Thank you for visiting our GitHub repository, and we hope you enjoy our superhero search and random generator website! Thank you for visiting our GitHub repository, and we hope you enjoy our superhero HeroFinder website!
+Thank you for visiting our GitHub repository, and we hope you enjoy our superhero HeroFinder website! Thank you for visiting our GitHub repository, and we hope you enjoy our superhero HeroFinder website!
