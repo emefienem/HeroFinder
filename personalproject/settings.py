@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-ii(h5qqvfw#mam88#b3*wiinj+x%wx1_ak(*qozax_ygsfwzyw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app' , '.now.sh']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -119,7 +119,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
-STATIC_ROOT = [os.path.join(BASE_DIR, 'netlifydeploy', 'static')]
 
 
 # Default primary key field type
